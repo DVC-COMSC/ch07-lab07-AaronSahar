@@ -1,7 +1,10 @@
 
 inputvalues = input('Enter all elements values: ')
-numbers1 = inputvalues.split() 
+numbers1 = inputvalues.split()
+for i in range(len(numbers1)):
+	numbers1[i] = int(numbers1[i]) 
 evenlist = []
+
 i=0
 while numbers1 and i < len(numbers1):
 	if int(numbers1[i]) % 2 == 0:
@@ -11,7 +14,3 @@ while numbers1 and i < len(numbers1):
 
 print("The list numbers ", numbers1)
 print("The list for even index elements", evenlist)
-
-# ******************************
-# Make your Code
-# ******************************
