@@ -12,5 +12,5 @@ while numbers1 and i < len(numbers1):
 		i-=1
 	i+=1
 
-print("The list numbers:", numbers1)
-print("The list for even index elements:", evenlist)
+print(numbers1)
+print(evenlist)
