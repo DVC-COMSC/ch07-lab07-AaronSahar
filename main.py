@@ -1,12 +1,16 @@
 
 inputvalues = input('Enter all elements values: ')
 numbers1 = inputvalues.split() 
-for i in range(len(numbers1)):
-	numbers1[i] = int(numbers1[i]) 
-# The following line is the same as the for-loop
-# numbers1 = list(map(int, numbers))
+evenlist = []
+i=0
+while numbers1 and i < len(numbers1):
+	if int(numbers1[i]) % 2 == 0:
+		evenlist.append(numbers1.pop(i))
+		i-=1
+	i+=1
 
-# print ("The original list: ", numbers1)
+print('The list numbers ', numbers1)
+print('The list for even index elements ', evenlist)
 
 # ******************************
 # Make your Code
